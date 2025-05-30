@@ -1,0 +1,653 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+.sp {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gayathri';
+  font-weight: 200;
+  src: url('../fonts/Gayathri-Thin.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gayathri';
+  font-weight: 400;
+  src: url('../fonts/Gayathri-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gayathri';
+  font-weight: 700;
+  src: url('../fonts/Gayathri-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  transition: 0.4s;
+}
+
+.person-name {
+  color: #0281F6;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.common-banner-title {
+  margin-bottom: 27px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.common-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.common-subtitle {
+  color: #0281F6;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.common-btn {
+  padding: 18px 15px 11px 15px;
+  border: 1px solid #0281F6;
+  background-color: #0281F6;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.common-btn:hover {
+  background-color: transparent;
+  color: #0281F6;
+}
+
+.common-date {
+  color: #4D4D4D;
+  font-size: 16px;
+}
+
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  color: #fff;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 58px 30px 44px;
+}
+
+.gnav {
+  display: flex;
+}
+
+.gnav a {
+  padding: 25px 0 25px 0;
+  font-size: 18px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gnav li+li {
+  padding-left: 42px;
+}
+
+.gnav a:hover {
+  font-weight: 700;
+}
+
+.btn-gnavi {
+  z-index: 1500;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/*header end*/
+
+
+/*footer section*/
+
+.sec-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 44px 44px 60px 44px;
+  background-color: #000000;
+}
+
+.subscription-form {
+  width: 283px;
+  margin: 12px 0 0 27px;
+}
+
+.email-input {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 7px 0 7px 16px;
+  border: none;
+  background: url("../img/common/paper_plane.png") no-repeat;
+  background-color: #FFFFFF;
+  background-size: 20px 18.87px;
+  background-position: 245px;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border-radius: 0;
+}
+
+.footer-text {
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+.categories {
+  display: flex;
+  margin: 17px 0 0 57px;
+}
+
+.category {
+  width: 110px;
+  margin-right: 20px;
+}
+
+.category:nth-child(2) {
+  margin-right: 10px;
+}
+
+.category li+li {
+  margin-top: 13px;
+}
+
+.social {
+  display: flex;
+  margin: 12px 0 0 55px;
+}
+
+.social li {
+  margin-right: 12px;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+/*footer end*/
+
+
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+  a {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2.083vw;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:hover {
+    transition: 0.4s;
+  }
+
+  .person-name {
+    color: #0281F6;
+    font-size: 3.906vw;
+    font-weight: 700;
+  }
+
+  .common-banner-title {
+    margin-bottom: 3.516vw;
+    font-size: 5.859vw;
+    font-weight: 700;
+  }
+
+  .common-title {
+    color: #000000;
+    font-size: 3.906vw;
+    font-weight: 700;
+  }
+
+  .common-subtitle {
+    color: #0281F6;
+    font-size: 2.604vw;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .common-btn {
+    padding: 2.344vw 1.953vw 1.432vw 1.953vw;
+    border: 0.13vw solid #0281F6;
+    background-color: #0281F6;
+    font-size: 2.604vw;
+    font-weight: 700;
+    border-radius: 1.302vw;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .common-btn:hover {
+    background-color: transparent;
+    color: #0281F6;
+  }
+
+  .common-date {
+    color: #4D4D4D;
+    font-size: 2.083vw;
+  }
+
+  /*header*/
+
+  .sp {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    border-bottom: 0.1vw solid #FFFFFF;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.9vw 5.7vw 3.9vw 5.7vw;
+  }
+
+  .gnav {
+    display: flex;
+    padding-right: 2vw;
+  }
+
+  .gnav a {
+    padding: 3.3vw 0 3.3vw 0;
+    font-size: 2.3vw;
+  }
+
+  .gnav li+li {
+    padding-left: 2.9vw;
+  }
+
+  .gnav a:hover {
+    font-weight: 700;
+  }
+
+
+  /*header end*/
+
+  /*footer section*/
+
+  .sec-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5.7vw 5.7vw 7.8vw 5.7vw;
+    background-color: #000000;
+  }
+
+  .subscription-form {
+    width: 264px;
+    margin: 53.8px 0 0 0px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin-bottom: 2.9vw;
+    padding: 0.9vw 0 0.9vw 2.1vw;
+    border: none;
+    background: url("../img/common/paper_plane.png") no-repeat;
+    background-color: #FFFFFF;
+    background-size: 2.6vw 2.5vw;
+    background-position: 28.9vw;
+    font-size: 2.1vw;
+    font-weight: 400;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .footer-text {
+    color: #FFFFFF;
+    font-size: 1.7vw;
+  }
+
+  .categories {
+    display: flex;
+    margin: 2.2vw 0 0 16.8vw;
+  }
+
+  .category {
+    width: 12.2vw;
+    margin-right: 3vw;
+  }
+
+  .category:nth-child(2) {
+    margin-right: 2.1vw;
+  }
+
+  .category:last-child {
+    margin-right: 0;
+  }
+
+  .category li+li {
+    margin-top: 1.7vw;
+  }
+
+  .social {
+    display: flex;
+    margin: 6.9vw 0 0 33.2vw;
+  }
+
+  .social li {
+    margin-right: 1.6vw;
+  }
+
+  .social li:last-child {
+    margin-right: 0;
+  }
+
+  /*footer end*/
+
+}
+
+
+@media screen and (max-width: 767.9px) {
+
+
+  a {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:hover {
+    transition: 0.4s;
+  }
+
+  .person-name {
+    color: #0281F6;
+    font-size: 4.688vw;
+    font-weight: 700;
+  }
+
+  .common-banner-title {
+    margin-bottom: 4.219vw;
+    font-size: 7.031vw;
+    font-weight: 700;
+  }
+
+  .common-title {
+    color: #000000;
+    font-size: 4.688vw;
+    font-weight: 700;
+  }
+
+  .common-subtitle {
+    color: #0281F6;
+    font-size: 3.125vw;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .common-btn {
+    padding: 2.813vw 2.344vw 1.719vw 2.344vw;
+    border: 0.156vw solid #0281F6;
+    background-color: #0281F6;
+    font-size: 3.125vw;
+    font-weight: 700;
+    border-radius: 1.563vw;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .common-btn:hover {
+    background-color: transparent;
+    color: #0281F6;
+  }
+
+  .common-date {
+    color: #4D4D4D;
+    font-size: 2.5vw;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  /*header*/
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 44px 40px 44px;
+  }
+
+  .gnav {
+    position: absolute;
+    top: -273px;
+    left: 0;
+    flex-direction: column;
+    z-index: 1000;
+    width: 100%;
+    height: 273px;
+    padding: 89px 0 0 0;
+    background-color: #FFFFFF;
+    transition: top 400ms ease;
+  }
+
+  .gnav li+li {
+    margin-top: 10.003px;
+  }
+
+  .btn-gnavi {
+    position: relative;
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
+    transition: all 400ms;
+  }
+
+  .btn-gnavi span {
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: #FFFFFF;
+    transition: all 400ms;
+  }
+
+  .btn-gnavi span:nth-child(1) {
+    top: 0px;
+  }
+
+  .btn-gnavi span:nth-child(2) {
+    top: 8px;
+  }
+
+  .btn-gnavi span:nth-child(3) {
+    top: 16px;
+  }
+
+  .btn-gnavi.hb-open span:nth-child(1) {
+    width: 30px;
+    background-color: #000000;
+    transform: translate(0, 8px) rotate(45deg);
+  }
+
+  .btn-gnavi.hb-open span:nth-child(2) {
+    display: none;
+  }
+
+  .btn-gnavi.hb-open span:nth-child(3) {
+    width: 30px;
+    background-color: #000000;
+    transform: translate(0, -8px) rotate(-45deg);
+  }
+
+  .gnav li {
+    width: 360px;
+    margin: 0 auto;
+    padding: 16.64px 0;
+    text-align: center;
+    border-bottom: 2px solid #D7D7D7;
+  }
+
+  .gnav li:last-child {
+    border-bottom: none;
+  }
+
+  .gnav {
+    display: flex;
+  }
+
+  .gnav a {
+    padding: 0 0 2px 0;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .gnav li+li {
+    padding-left: 0px;
+  }
+
+  .gnav a:hover {
+    font-weight: 700;
+  }
+
+  /*menu end*/
+
+  /*footer section*/
+
+  .sec-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 44px 44px 49.92px 44px;
+    background-color: #000000;
+  }
+
+  .sec-footer h5 a img {
+    width: 100%;
+  }
+
+  .subscription-form {
+    width: 264px;
+    margin: 57px 0 0 0px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin-bottom: 18.56px;
+    padding: 5.76px 0 5.76px 20px;
+    border: none;
+    background: url("../img/common/paper_plane.png") no-repeat;
+    background-color: #FFFFFF;
+    background-size: 22px 18.45px;
+    background-position: 220px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .footer-text {
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+
+  .categories {
+    display: flex;
+    margin: 14.08px 0 0 78px;
+  }
+
+  .category {
+    width: 78.08px;
+    margin-right: 40px;
+  }
+
+  .category:nth-child(2) {
+    margin-right: 35px;
+  }
+
+  .category:last-child {
+    margin-right: 0;
+  }
+
+  .category li+li {
+    margin-top: 13px;
+  }
+
+  .social {
+    display: flex;
+    margin: 55px 0 0 126px;
+  }
+
+  .social li {
+    margin-right: 12px;
+  }
+
+  .social li:last-child {
+    margin-right: 0;
+  }
+
+  /*footer end*/
+}
